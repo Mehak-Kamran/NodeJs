@@ -2,20 +2,20 @@ const fs=require("fs")
 const { text } = require("stream/consumers")
 
 //writefile
-// fs.writeFile("Basics/FileSystem/text.txt","hey",()=>{
+fs.writeFile("Basics/FileSystem/text.txt","hey",()=>{
 
-//     console.log("file was written")
-// })
+ console.log("file was written")
+})
 
 //read
-// fs.readFile("Basics/FileSystem/text.txt",(err,data)=>{
-//     if(err){
-//         console.log(err)
-//     }
-//     else{
-//         console.log(data.toString())
-//     }
-// })
+fs.readFile("Basics/FileSystem/text.txt",(err,data)=>{
+   if(err){
+       console.log(err)
+   }
+   else{
+      console.log(data.toString())
+    }
+ })
 
 //dir
 // if(!fs.existsSync("Basics/FileSystem/hello")){
